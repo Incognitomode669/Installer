@@ -6,12 +6,19 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.0 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.0/RosDashboard-Setup-1.0.0-x64.exe)
+[Download ROS Dashboard Setup 1.0.1 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.1/RosDashboard-Setup-1.0.1-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.0)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.1)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
-updating. Setup provides shortcuts and an uninstaller and preserves user settings.
+updating. Run the new setup over an existing setup installation; no uninstall is
+required. Setup preserves user settings and updates the program in its previous directory.
+A portable copy is separate: disable its automatic launch hook before moving/removing
+that copy, then enable the hook in the installed Dashboard.
+
+Version 1.0.1 repairs automatic Reborn direct launching, including long Electron child
+commands, short-path aliases and token-based child creation. Temporarily busy diagnostics
+files no longer stop the launcher. The automatic launch feature remains available.
 
 ## Requirements and limitations
 
@@ -26,9 +33,9 @@ updating. Setup provides shortcuts and an uninstaller and preserves user setting
 
 ## Checksum
 
-Size: 168,750,912 bytes.
+Size: 168,754,266 bytes.
 
-SHA-256: `619c75b5e0f173efa0ba3c1ce6502af6c433cc3af75d4c53f7b796b1194ecb20`
+SHA-256: `c17c5f66aee33d53bf31eeba9268e2bdb664436278ccd3d82d37ca04ada385c2`
 
-See `checksums/1.0.0.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.1.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.
