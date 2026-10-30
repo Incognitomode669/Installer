@@ -1,5 +1,19 @@
 # Releases
 
+## 1.0.2 Preview - 30 October 2026
+
+Temporarily disable automatic Reborn direct launching and hide its dashboard
+option. Backend enable requests are rejected; manual launch, roll, and
+diagnostics actions remain available. Setup/uninstall removes only a legacy
+registration owned by that installation, with Windows administrator permission
+when required. Other Dashboard copies' registrations are left untouched.
+
+Verified 51 launcher tests, normal C# and protected UI/install checks, installed
+runtime checks, isolated legacy-registration cleanup during a 1.0.1-to-1.0.2
+upgrade, settings retention, and uninstall. The cleanup fixture uses HKCU;
+the production elevation branch and other-machine tests remain outstanding.
+Unsigned preview.
+
 ## 1.0.1 Preview - 30 October 2026
 
 Repair automatic Reborn direct launching while keeping the feature available.
