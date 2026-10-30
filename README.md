@@ -6,18 +6,21 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.2 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.2/RosDashboard-Setup-1.0.2-x64.exe)
+[Download ROS Dashboard Setup 1.0.3 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.3/RosDashboard-Setup-1.0.3-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.2)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.3)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
 updating. Run the new setup over an existing setup installation; no uninstall is
 required. Setup preserves user settings and updates the program in its previous directory.
 A portable copy is separate: disable its automatic launch hook before moving/removing
-that copy, then enable the hook in the installed Dashboard.
+that copy. Automatic direct launching remains disabled in the installed Dashboard.
 
-Version 1.0.2 temporarily disables automatic Reborn direct launching and hides
-its dashboard option. Manual launch, roll, and diagnostics actions remain available.
+Version 1.0.3 accepts renderer-only launcher updates when the reviewed integration
+remains unchanged and discovers the newest installed app folder. Changes to integration
+code or package loader metadata still require review. Automatic Reborn direct launching
+remains disabled and hidden. Manual launch, roll, and diagnostics remain available.
+This release also includes the recent Unarmed native-profile and mesh/body-part fixes.
 Setup removes a legacy launch registration owned by the installation being upgraded;
 Windows may request administrator permission.
 
@@ -34,9 +37,9 @@ Windows may request administrator permission.
 
 ## Checksum
 
-Size: 168,752,876 bytes.
+Size: 168,757,790 bytes.
 
-SHA-256: `b864952987404b835c70e126b21f926c724ee4a16c17cd3fb8735d60ed39daef`
+SHA-256: `88541a78394793700a6b0b7f12dde50dcf562f2611319631ae7df91b128a0869`
 
-See `checksums/1.0.2.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.3.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.

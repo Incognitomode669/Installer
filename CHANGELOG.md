@@ -1,5 +1,20 @@
 # Releases
 
+## 1.0.3 Preview - 30 October 2026
+
+Accept renderer-only launcher updates when the reviewed main/preload integration
+and package metadata (except version) remain unchanged. Verify archive structure,
+member integrity and supported executable settings. Actual build hashes still
+invalidate cached offline verification. Discover the newest numeric app folder.
+Changes to integration or loader metadata require review. Automatic direct
+launching remains disabled and hidden. Includes the recent Unarmed fixes.
+
+Verified 64 launcher tests, 57 hit/target-lock tests, normal C# and protected
+UI/install checks, eight offline checks, a real manual intercepted startup,
+and isolated 1.0.2-to-1.0.3 upgrade/runtime checks/uninstall with settings retained.
+The saved identity was unchanged in startup testing. Unsigned preview; other
+machines, missing-.NET and server-acceptance paths remain untested.
+
 ## 1.0.2 Preview - 30 October 2026
 
 Temporarily disable automatic Reborn direct launching and hide its dashboard
