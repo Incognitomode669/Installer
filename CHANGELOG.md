@@ -1,5 +1,20 @@
 # Releases
 
+## 1.0.4 Preview - 31 October 2026
+
+Add dashboard-injected fixes for the reviewed Reborn native Transform.Bind argument
+reference leak and skin-loading bursts. Prioritize base/initial-detail model requests,
+retry capacity-refused requests within the existing wait deadline, and bound preload
+starts and outfit detail changes per frame. Stop restores the skin-loading functions.
+Game/launcher guards skip unknown builds; ROS files on disk are unchanged.
+
+Normal C# checks, targeted native ownership/skin scheduling regressions, 14 protected
+UI/install suites and the real bundled-runtime check passed. A skins-enabled island
+and plane test exercised the patch without multi-second freeze reports or optimizer
+errors; short hitches remain and landing/ground combat are not validated. The full
+helper suite retains its documented 2 failures and 33 errors. This version's installer
+lifecycle, other-machine and missing-.NET tests have not been run. Unsigned preview.
+
 ## 1.0.3 Preview - 30 October 2026
 
 Accept renderer-only launcher updates when the reviewed main/preload integration

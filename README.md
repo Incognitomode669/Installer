@@ -6,9 +6,9 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.3 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.3/RosDashboard-Setup-1.0.3-x64.exe)
+[Download ROS Dashboard Setup 1.0.4 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.4/RosDashboard-Setup-1.0.4-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.3)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.4)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
 updating. Run the new setup over an existing setup installation; no uninstall is
@@ -16,11 +16,16 @@ required. Setup preserves user settings and updates the program in its previous 
 A portable copy is separate: disable its automatic launch hook before moving/removing
 that copy. Automatic direct launching remains disabled in the installed Dashboard.
 
-Version 1.0.3 accepts renderer-only launcher updates when the reviewed integration
-remains unchanged and discovers the newest installed app folder. Changes to integration
-code or package loader metadata still require review. Automatic Reborn direct launching
-remains disabled and hidden. Manual launch, roll, and diagnostics remain available.
-This release also includes the recent Unarmed native-profile and mesh/body-part fixes.
+Version 1.0.4 adds dashboard-injected Reborn fixes for a native Transform.Bind
+reference leak and skin-loading bursts. Skin requests prioritize base/initial-detail
+models, retry capacity-refused requests within existing wait deadlines, and spread
+preload/outfit work across frames. The reviewed game/launcher implementations are
+checked before applying; unknown implementations are skipped. Load the dashboard
+helper for each ROS session. ROS files on disk are unchanged.
+
+Renderer-only launcher update compatibility and the previous Unarmed fixes are retained.
+Automatic Reborn direct launching remains disabled and hidden. Manual launch, roll,
+and diagnostics remain available.
 Setup removes a legacy launch registration owned by the installation being upgraded;
 Windows may request administrator permission.
 
@@ -31,15 +36,16 @@ Windows may request administrator permission.
   Installing missing .NET may require administrator permission and a restart.
 - Game installations and optional NVIDIA/WireGuard drivers are separate.
 - The preview is unsigned. Windows may display a warning; no trusted publisher certificate is included.
-- Install, upgrade, uninstall and protected-app checks passed on the build machine.
-  Other machines and the missing-.NET installation path have not been tested.
+- This build passed normal C#, protected UI/install and bundled-runtime checks.
+  Installer lifecycle checks passed for earlier releases; 1.0.4 install/upgrade/uninstall,
+  other machines and the missing-.NET path have not been tested.
 - Existing helper test issues remain unresolved. Obfuscation is not perfect security.
 
 ## Checksum
 
-Size: 168,757,790 bytes.
+Size: 168,759,114 bytes.
 
-SHA-256: `88541a78394793700a6b0b7f12dde50dcf562f2611319631ae7df91b128a0869`
+SHA-256: `3731543b3896cc24db529666bb8f5090b9d3b731cef7a4fda35f1255b6104467`
 
-See `checksums/1.0.3.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.4.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.
