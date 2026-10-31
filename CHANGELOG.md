@@ -1,5 +1,24 @@
 # Releases
 
+## 1.0.6 Preview - 31 October 2026
+
+Fix **Limit bomb distance** affecting ordinary gun target locks while the Bomb
+feature is enabled. The lock filter now checks the equipped action: throwable
+modes and the AK-47 test require the throwable slot, while Unarmed test requires
+Fists. Ordinary guns keep their normal targeting range regardless of the Bomb
+feature's toggle or selected dropdown mode. Bomb queues retain their distance
+checks, and saved distance/filter preferences are preserved.
+
+125 targeted Python regressions passed, including ordinary-gun acquisition and
+retention for every dropdown mode, Bomb/Fists limits, and weapon switching.
+Normal C# checks, all 14 protected UI/install suites and the real bundled-runtime
+check passed. The local installer upgrade preserved settings and passed the
+installed runtime check. Live gameplay confirmation remains pending; reload the
+helper (or restart the game and load it again) after updating to use the new code.
+Existing full-helper-suite failures remain unresolved. Other machines, this
+version's clean install/uninstall, and the missing-.NET path were not tested.
+Unsigned preview.
+
 ## 1.0.5 Preview - 31 October 2026
 
 Add an optional **Limit bomb distance** toggle and editable **Max (m)** setting
