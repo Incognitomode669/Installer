@@ -1,5 +1,26 @@
 # Releases
 
+## 1.0.5 Preview - 31 October 2026
+
+Add an optional **Limit bomb distance** toggle and editable **Max (m)** setting
+below Bomb type. The filter defaults off with a 10 m starting value; both
+preferences are saved. Enabling it limits target-lock acquisition/retention and
+the loaded-character queue, with distance checked before actions. Existing
+monitoring range, match, team and identity checks still apply.
+
+Backpack auto-fill now delivers the quantity allowed by native carry capacity,
+reports partial/skipped items, and continues the remaining bundle. Uncertain
+pickup failures still stop delivery to avoid duplicate grants.
+
+Normal C# build/UI checks, 120 targeted Python regressions, all 14 protected
+UI/install suites and the bundled-runtime check passed. The installed dashboard
+was upgraded to 1.0.5 using this installer; six settings files were preserved,
+the installed runtime check passed, and the dashboard reopened. Live gameplay
+verification of the distance filter remains pending. The full helper suite's
+existing two failures and 33 fixture errors remain unresolved. Other machines,
+clean install/uninstall for this version, and the missing-.NET path were not tested.
+Unsigned preview; game/driver requirements remain separate.
+
 ## 1.0.4 Preview - 31 October 2026
 
 Add dashboard-injected fixes for the reviewed Reborn native Transform.Bind argument

@@ -6,9 +6,9 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.4 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.4/RosDashboard-Setup-1.0.4-x64.exe)
+[Download ROS Dashboard Setup 1.0.5 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.5/RosDashboard-Setup-1.0.5-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.4)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.5)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
 updating. Run the new setup over an existing setup installation; no uninstall is
@@ -16,12 +16,9 @@ required. Setup preserves user settings and updates the program in its previous 
 A portable copy is separate: disable its automatic launch hook before moving/removing
 that copy. Automatic direct launching remains disabled in the installed Dashboard.
 
-Version 1.0.4 adds dashboard-injected Reborn fixes for a native Transform.Bind
-reference leak and skin-loading bursts. Skin requests prioritize base/initial-detail
-models, retry capacity-refused requests within existing wait deadlines, and spread
-preload/outfit work across frames. The reviewed game/launcher implementations are
-checked before applying; unknown implementations are skipped. Load the dashboard
-helper for each ROS session. ROS files on disk are unchanged.
+Version 1.0.5 adds a configurable Bomb type target-distance filter with an
+on/off toggle and saved maximum in meters, plus partial-capacity backpack delivery.
+The native ownership and skin-loading fixes from 1.0.4 are retained.
 
 Renderer-only launcher update compatibility and the previous Unarmed fixes are retained.
 Automatic Reborn direct launching remains disabled and hidden. Manual launch, roll,
@@ -36,16 +33,17 @@ Windows may request administrator permission.
   Installing missing .NET may require administrator permission and a restart.
 - Game installations and optional NVIDIA/WireGuard drivers are separate.
 - The preview is unsigned. Windows may display a warning; no trusted publisher certificate is included.
-- This build passed normal C#, protected UI/install and bundled-runtime checks.
-  Installer lifecycle checks passed for earlier releases; 1.0.4 install/upgrade/uninstall,
-  other machines and the missing-.NET path have not been tested.
+- This build passed normal C#, 120 targeted Python, protected UI/install and bundled-runtime checks.
+  An installed upgrade to 1.0.5 preserved settings and passed its runtime check.
+  Live distance-filter gameplay, other machines, clean install/uninstall for this version,
+  and the missing-.NET path have not been tested.
 - Existing helper test issues remain unresolved. Obfuscation is not perfect security.
 
 ## Checksum
 
-Size: 168,759,114 bytes.
+Size: 168,764,122 bytes.
 
-SHA-256: `3731543b3896cc24db529666bb8f5090b9d3b731cef7a4fda35f1255b6104467`
+SHA-256: `431cf4cfb3a034c688d8bc74a140737f8ca24c2404633e8b9546b150eb378756`
 
-See `checksums/1.0.4.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.5.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.
