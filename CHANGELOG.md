@@ -1,5 +1,43 @@
 # Releases
 
+## 1.0.9 Preview - 1 November 2026
+
+Add **Game executable...** above **Load flight / loot helper** in the
+**CHARACTER FLIGHT** section. Select the current game version and browse to its
+`x64/ros64.exe` or root-level `ros.exe`. The dashboard saves a separate game
+directory for Reborn, Legacy and Infinity. Selecting a launcher executable is
+rejected. The identity dialog's launcher setting remains separate.
+
+This addresses installations whose game directory differs from automatic
+discovery. The helper and dashboard process checks use the selected game root.
+The existing shared `GameDirectory` setting and automatic discovery remain
+fallbacks for variants without a saved selection. Saving does not attach to a
+process: open the selected game and click Load afterward.
+
+The 1.0.8 monitor-readiness fix is retained. The original other-PC loading failure
+has not been reproduced; this is not a claim that every missing resident marker
+is caused by a directory mismatch.
+
+[Download release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.9).
+
+## Verification and limitations
+
+Normal dashboard build checks and six Python environment tests passed. New
+configuration checks cover per-variant persistence, process path matching,
+unchanged unrelated settings, missing files, rejected launcher paths and
+root-level `ros.exe`. UI checks cover visibility, accessibility names and bounds;
+the expanded dashboard preview was visually inspected.
+
+All 14 protected UI/install suites and the real bundled Python/Frida dependency
+check passed. `git diff --check` passed.
+
+Installer: `RosDashboard-Setup-1.0.9-x64.exe` (168,757,086 bytes).
+
+SHA-256: `21bd74415cead22fe7c8ecec6c4a47d88a59fa62e8125919aa9f9599a510ea5c`.
+This version's installer clean install, upgrade/uninstall, the reported other PC,
+live gameplay and missing-.NET path have not been tested. Existing helper suite
+issues remain unresolved. Unsigned preview.
+
 ## 1.0.8 Preview - 1 November 2026
 
 The player monitor now waits for fresh helper readiness before requesting a

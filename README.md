@@ -6,9 +6,9 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.8 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.8/RosDashboard-Setup-1.0.8-x64.exe)
+[Download ROS Dashboard Setup 1.0.9 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.9/RosDashboard-Setup-1.0.9-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.8)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.9)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
 updating. Run the new setup over an existing setup installation; no uninstall is
@@ -16,9 +16,12 @@ required. Setup preserves user settings and updates the program in its previous 
 A portable copy is separate: disable its automatic launch hook before moving/removing
 that copy. Automatic direct launching remains disabled in the installed Dashboard.
 
-Version 1.0.8 makes the player monitor wait for helper readiness and keeps monitor
-errors from overwriting the Load result. It does not establish or fix the underlying
-helper initialization failure reported on another PC.
+Version 1.0.9 adds Game executable... above Load in CHARACTER FLIGHT. Choose the
+game version and select its x64/ros64.exe or root-level ros.exe on this PC. Game
+directories are saved separately for Reborn, Legacy and Infinity. The identity
+dialog still selects the launcher separately. Open the selected game, then click
+Load. The other-PC failure has not been reproduced; this addresses a possible
+directory mismatch, not every cause of missing helper state.
 
 Renderer-only launcher update compatibility and the previous Unarmed fixes are retained.
 Automatic Reborn direct launching remains disabled and hidden. Manual launch, roll,
@@ -40,9 +43,9 @@ Windows may request administrator permission.
 
 ## Checksum
 
-Size: 168,767,662 bytes.
+Size: 168,757,086 bytes.
 
-SHA-256: `de9bfb5ce62b016ff32ef2584e42ce3c3285295a063aa29ca3d6d1ef5b0a69ba`
+SHA-256: `21bd74415cead22fe7c8ecec6c4a47d88a59fa62e8125919aa9f9599a510ea5c`
 
-See `checksums/1.0.8.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.9.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.
