@@ -1,5 +1,32 @@
 # Releases
 
+## 1.0.8 Preview - 1 November 2026
+
+The player monitor now waits for fresh helper readiness before requesting a
+stream. Previously it could repeatedly read a missing `.flight-resident.json`
+file and replace the helper's Load result with a missing-file error. Pending
+monitor errors also leave the status alone while Load or another helper command
+is running. Monitor errors use the readable prefix `Player monitor`.
+
+This update makes the Load result visible; it does not establish or fix the
+underlying cause of helper initialization failing on the reported other PC.
+No changes were made to process detection, helper injection, or VIP status.
+
+[Download release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.8).
+
+## Verification and limitations
+
+Normal dashboard build checks, all 14 protected UI/install suites, and the real
+bundled Python/Frida dependency check passed. `git diff --check` passed.
+This version's installer clean install, upgrade/uninstall, and missing-.NET path
+have not been tested.
+
+Installer: `RosDashboard-Setup-1.0.8-x64.exe` (168,767,662 bytes).
+
+SHA-256: `de9bfb5ce62b016ff32ef2584e42ce3c3285295a063aa29ca3d6d1ef5b0a69ba`.
+The reported other PC and live gameplay have not been tested. Existing helper
+suite issues remain unresolved. This is an unsigned preview.
+
 ## 1.0.7 Preview - 1 November 2026
 
 Add an editable launcher executable path to the Reborn and Infinity identity

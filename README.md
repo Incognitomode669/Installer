@@ -6,9 +6,9 @@ never been committed to this repository.
 
 ## Download
 
-[Download ROS Dashboard Setup 1.0.7 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.7/RosDashboard-Setup-1.0.7-x64.exe)
+[Download ROS Dashboard Setup 1.0.8 x64](https://github.com/Incognitomode669/Installer/releases/download/v1.0.8/RosDashboard-Setup-1.0.8-x64.exe)
 
-[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.7)
+[Installer preview release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.8)
 
 Copy the single installer to the target machine and run it. Close ROS Dashboard before
 updating. Run the new setup over an existing setup installation; no uninstall is
@@ -16,10 +16,9 @@ required. Setup preserves user settings and updates the program in its previous 
 A portable copy is separate: disable its automatic launch hook before moving/removing
 that copy. Automatic direct launching remains disabled in the installed Dashboard.
 
-Version 1.0.7 adds an editable launcher path with Browse and Save path controls
-for Reborn and Infinity. Select the launcher executable in your own installation;
-each variant remembers its own location. Missing files and incorrect executable
-names are rejected before launch. Existing compatibility checks remain in place.
+Version 1.0.8 makes the player monitor wait for helper readiness and keeps monitor
+errors from overwriting the Load result. It does not establish or fix the underlying
+helper initialization failure reported on another PC.
 
 Renderer-only launcher update compatibility and the previous Unarmed fixes are retained.
 Automatic Reborn direct launching remains disabled and hidden. Manual launch, roll,
@@ -34,18 +33,16 @@ Windows may request administrator permission.
   Installing missing .NET may require administrator permission and a restart.
 - Game installations and optional NVIDIA/WireGuard drivers are separate.
 - The preview is unsigned. Windows may display a warning; no trusted publisher certificate is included.
-- This build passed normal C# configuration/UI checks, all 64 launcher Python tests,
-  all 14 protected UI/install suites and the bundled-runtime check.
-  The installed desktop copy passed feature-build UI checks after a direct executable update.
-  This installer version's clean install, upgrade/uninstall, other machines and the
-  missing-.NET path have not been tested.
+- This build passed normal dashboard checks, all 14 protected UI/install suites,
+  and the bundled Python/Frida dependency check. Installer clean install, upgrade/
+  uninstall, other machines, live gameplay, and the missing-.NET path were not tested.
 - Existing helper test issues remain unresolved. Obfuscation is not perfect security.
 
 ## Checksum
 
-Size: 168,766,261 bytes.
+Size: 168,767,662 bytes.
 
-SHA-256: `048860d40cf62304b2ffd2a98e31dc9c8b9b072deff1ac045c1ae1b659a53b7b`
+SHA-256: `de9bfb5ce62b016ff32ef2584e42ce3c3285295a063aa29ca3d6d1ef5b0a69ba`
 
-See `checksums/1.0.7.sha256` or the checksum release asset. A checksum detects byte changes;
+See `checksums/1.0.8.sha256` or the checksum release asset. A checksum detects byte changes;
 it does not authenticate the publisher.
