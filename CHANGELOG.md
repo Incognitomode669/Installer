@@ -1,5 +1,37 @@
 # Releases
 
+## 1.0.7 Preview - 1 November 2026
+
+Add an editable launcher executable path to the Reborn and Infinity identity
+dialogs. Use **Browse...** to locate your installed `RosReborn.exe` (in Reborn's
+`app-<version>` folder) or `RosInfinity.exe`. Browsing saves the selection;
+typed paths can be saved with **Save path** and are also validated before launch.
+Each variant remembers its own path without changing other dashboard settings.
+Missing files and incorrect executable names produce a clear error. Existing
+automatic discovery remains the default until a custom path is saved, and the
+interceptor's compatibility checks still apply to the selected executable.
+
+Installer: `RosDashboard-Setup-1.0.7-x64.exe` (168,766,261 bytes).
+
+SHA-256: `048860d40cf62304b2ffd2a98e31dc9c8b9b072deff1ac045c1ae1b659a53b7b`.
+
+[Download release](https://github.com/Incognitomode669/Installer/releases/tag/v1.0.7).
+
+## Verification and limitations
+
+Normal C# build/configuration/UI checks, all 64 launcher Python regressions,
+all 14 protected UI/install suites and the real bundled-runtime check passed.
+Configuration tests cover separate variant paths, persistence, unrelated-setting
+preservation, and rejection of invalid or missing executables. The rendered path
+controls were visually checked. The installed desktop-shortcut copy was updated
+with the feature build and its UI checks passed; that was a direct executable
+update, not an upgrade using this installer.
+
+This version's installer clean install, upgrade and uninstall, other machines,
+and the missing-.NET path were not tested. Existing full-helper-suite issues
+remain unresolved. Unsigned preview; game and optional driver requirements are
+unchanged. Automatic Reborn direct launching remains disabled and hidden.
+
 ## 1.0.6 Preview - 31 October 2026
 
 Fix **Limit bomb distance** affecting ordinary gun target locks while the Bomb
